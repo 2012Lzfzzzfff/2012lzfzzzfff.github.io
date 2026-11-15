@@ -1,0 +1,111 @@
+/* Colours: change the accent here, everything else follows. */
+:root {
+  --bg: #ffffff;
+  --surface: #f5f7fa;
+  --text: #1c2330;
+  --muted: #5b6575;
+  --line: #e3e7ee;
+  --accent: #005c84;          /* deep teal-blue */
+  --accent-soft: #e6f1f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161d;
+    --surface: #1a2029;
+    --text: #e6e9ee;
+    --muted: #9aa4b2;
+    --line: #2a313c;
+    --accent: #5fb3d9;
+    --accent-soft: #1d2d38;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+/* Top navigation */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 16px; }
+.brand { font-weight: 650; color: var(--text); }
+.links { display: flex; gap: 18px; overflow-x: auto; white-space: nowrap; }
+.links a { color: var(--muted); font-size: 15px; }
+.links a:hover { color: var(--accent); text-decoration: none; }
+
+/* Profile */
+.profile { display: flex; gap: 28px; align-items: center; padding: 48px 0 8px; }
+.avatar { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; flex: none; }
+.avatar-initials {
+  display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent);
+  font-size: 42px; font-weight: 600; letter-spacing: 1px;
+}
+h1 { margin: 0 0 6px; font-size: 32px; line-height: 1.2; }
+.role { margin: 0 0 10px; color: var(--muted); }
+.contact { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.sep { display: none; }
+
+/* Sections */
+section { padding: 28px 0 8px; }
+h2 {
+  font-size: 22px; margin: 0 0 14px; padding-bottom: 6px;
+  border-bottom: 2px solid var(--accent-soft);
+}
+h3 { font-size: 17px; margin: 22px 0 10px; }
+p { margin: 0 0 12px; }
+.muted { color: var(--muted); }
+
+.tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  background: var(--accent-soft); color: var(--accent);
+  padding: 4px 12px; border-radius: 999px; font-size: 14px;
+}
+
+.tag-group { margin: 14px 0 8px; font-size: 14px; font-weight: 600; color: var(--muted); }
+.tags-alt li { background: var(--surface); color: var(--text); border: 1px solid var(--line); }
+
+.skills { list-style: none; padding: 0; margin: 0; }
+.skills li { display: flex; gap: 16px; padding: 3px 0; color: var(--muted); }
+.skills span { flex: none; width: 160px; color: var(--text); font-weight: 600; }
+
+.news { list-style: none; padding: 0; margin: 0; }
+.news li { display: flex; gap: 16px; padding: 6px 0; }
+.date { flex: none; width: 84px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.item { display: flex; gap: 16px; padding: 8px 0; }
+.when { flex: none; width: 110px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.what { margin: 0 0 4px; font-weight: 600; }
+.item .muted { margin: 0; }
+
+.pub { padding: 10px 14px; margin-bottom: 10px; background: var(--surface); border-radius: 8px; }
+.pub p { margin: 0 0 2px; }
+.pub-title { font-weight: 600; }
+
+.footer { padding: 40px 20px 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 32px; }
+.funding { font-size: 13px; }
+
+/* Phones */
+@media (max-width: 640px) {
+  .profile { flex-direction: column; text-align: center; padding-top: 32px; }
+  .contact { justify-content: center; }
+  .avatar { width: 144px; height: 144px; }
+  .brand { display: none; }
+  .links { gap: 14px; }
+  .news li, .item { flex-direction: column; gap: 2px; }
+  .date, .when { width: auto; }
+  .skills li { flex-direction: column; gap: 0; padding: 5px 0; }
+  .skills span { width: auto; }
+}

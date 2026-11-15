@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zhifei Lyu</title>
+<meta name="description" content="Zhifei Lyu, PhD candidate at the University of Southampton: thermoelectric cooling of chip hotspots and AI-assisted thermal design.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <nav class="wrap nav">
+    <a class="brand" href="#top">Zhifei Lyu</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="wrap">
+
+  <!-- ===== Profile ===== -->
+  <section class="profile">
+    <img class="avatar" src="files/avatar.jpg" alt="Zhifei Lyu" width="168" height="168">
+    <div>
+      <h1>Zhifei Lyu</h1>
+      <p class="role">PhD Candidate, University of Southampton<br>
+         Marie Skłodowska-Curie Doctoral Candidate (DC15), MGICIAN network</p>
+      <p class="contact">
+        <a href="mailto:zhifei.lyu@soton.ac.uk">zhifei.lyu@soton.ac.uk</a>
+        <span class="sep">·</span><a href="https://orcid.org/0009-0000-0364-0474">ORCID</a>
+        <span class="sep">·</span><a href="https://www.linkedin.com/in/zhifei-lyu-bbb53b19b/">LinkedIn</a>
+        <span class="sep">·</span><a href="https://github.com/2012Lzfzzzfff">GitHub</a>
+        <!-- Add when available:
+        <span class="sep">·</span><a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a>
+        -->
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a PhD candidate at the University of Southampton, supervised by
+      Dr Ruomeng Huang. My project, <em>Smart Design of Thermoelectric
+      Coolers for On-Chip Cooling Applications</em>, is part of the Marie Skłodowska-Curie
+      doctoral network MGICIAN (Magnesium Alloys for Efficient Solid-State Cooling).</p>
+    <p>My research sits between thermal engineering and artificial intelligence. Thermoelectric
+      coolers can remove heat from hotspots on chips, but designing one means searching a large space
+      of materials, leg geometries, electrical contacts and package interfaces, and every detailed
+      multiphysics simulation is expensive. I build machine-learning surrogate models that learn from
+      physics-based simulations: neural networks and Gaussian processes combined with physical models
+      of the cooler, so that many designs can be evaluated far faster than with full simulation while
+      the predictions stay within what the physics allows.</p>
+    <p>I am particularly interested in when such models can be trusted: how much training data they
+      need, how far they can extrapolate beyond the designs they were trained on, how uncertain their
+      predictions are, and how physical knowledge makes them more data-efficient. In the longer term I
+      want to use AI to design and control whole chip cooling systems, with thermoelectric coolers
+      working alongside liquid cooling to reduce the energy the system uses.</p>
+    <p>Before the PhD I spent two and a half years on thermal and fluid simulation of power
+      electronics at Huawei in Germany, where I built Python and MATLAB workflows for parametric
+      thermal studies, alongside an M.Sc. in Automotive Engineering at the Technical University
+      of Munich.</p>
+
+    <h3>Research Interests</h3>
+    <p class="tag-group">AI and machine learning</p>
+    <ul class="tags">
+      <li>Physics-informed machine learning</li>
+      <li>Surrogate models for multiphysics simulation</li>
+      <li>Neural networks and Gaussian processes</li>
+      <li>Uncertainty quantification and extrapolation</li>
+      <li>Data-efficient learning</li>
+      <li>AI-assisted design optimisation</li>
+      <li>AI for thermal management and control</li>
+    </ul>
+    <p class="tag-group">Thermal engineering</p>
+    <ul class="tags tags-alt">
+      <li>On-chip thermoelectric cooling</li>
+      <li>Electrical contacts and thermal interfaces</li>
+      <li>Hybrid thermoelectric and liquid cooling</li>
+      <li>System-level energy of chip cooling</li>
+      <li>Multiphysics simulation (COMSOL, OpenFOAM)</li>
+    </ul>
+  </section>
+
+  <!-- ===== News ===== -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <!-- Newest first. Copy a line to add an item. -->
+      <li><span class="date">Sep 2026</span>Started my PhD at the University of Southampton as an MSCA Doctoral Candidate in the MGICIAN network.</li>
+      <li><span class="date">May 2026</span>Completed my M.Sc. in Automotive Engineering at the Technical University of Munich.</li>
+    </ul>
+  </section>
+
+  <!-- ===== Publications ===== -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="muted">Publications will be listed here as they appear.</p>
+    <!-- Template for one entry:
+    <div class="pub">
+      <p class="pub-title">Title of the paper</p>
+      <p class="pub-authors"><strong>Zhifei Lyu</strong>, Co-author, Ruomeng Huang</p>
+      <p class="pub-venue"><em>Journal or Conference</em>, 2027.
+        <a href="https://doi.org/XXXX">DOI</a> · <a href="files/paper.pdf">PDF</a></p>
+    </div>
+    -->
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="when">2023 – 2025</div>
+      <div>
+        <p class="what">Thermal and Fluid Simulation, Huawei Technologies, Weilheim, Germany</p>
+        <p class="muted">Conjugate heat transfer of SiC power modules in COMSOL and ANSYS Fluent: chip, interface
+          materials, substrate and cooler; jet impingement and two-phase cooling concepts; validation against
+          measured temperatures.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="when">2022</div>
+      <div>
+        <p class="what">Multiphysics Simulation, Liangdao GmbH, Munich, Germany</p>
+        <p class="muted">Thermal, electromagnetic and environmental simulation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="item">
+      <div class="when">2026 – now</div>
+      <div>
+        <p class="what">PhD, University of Southampton, UK</p>
+        <p class="muted">MSCA Doctoral Candidate (DC15), MGICIAN network.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="when">2026</div>
+      <div>
+        <p class="what">M.Sc. Automotive Engineering, Technical University of Munich, Germany</p>
+        <p class="muted">Thesis: extension of an OpenFOAM volume-of-fluid solver at C++ source level.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="when">2022</div>
+      <div>
+        <p class="what">B.Sc. Mechanical Engineering, University of Duisburg-Essen, Germany</p>
+      </div>
+    </div>
+
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li><span>Machine learning</span>PyTorch, scikit-learn, Gaussian process regression, neural-network surrogate models</li>
+      <li><span>Scientific computing</span>Python (NumPy, SciPy, pandas, Matplotlib), MATLAB, C/C++</li>
+      <li><span>Simulation</span>COMSOL Multiphysics, ANSYS Fluent, OpenFOAM (C++ solver development)</li>
+      <li><span>Computing</span>Linux, HPC clusters, Git</li>
+      <li><span>Languages</span>Chinese (native), English, German</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap footer">
+  <p class="funding">This project has received funding from the European Union's Horizon Europe research
+    and innovation programme under the Marie Skłodowska-Curie grant agreement No 101227508.</p>
+  <p>© 2026 Zhifei Lyu · Last updated November 2026</p>
+</footer>
+
+</body>
+</html>
